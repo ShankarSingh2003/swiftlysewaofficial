@@ -1,0 +1,75 @@
+.dashboard-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  .services-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .service-item {
+    background-color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .create-service-section {
+    margin-top: 30px;
+  }
+  
+  .create-service-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .form-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-button:hover {
+    background-color: #0056b3;
+  }
+  

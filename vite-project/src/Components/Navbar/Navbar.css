@@ -1,0 +1,137 @@
+/* Default styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+  }
+  
+  /* Logo styling */
+  .nav-logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .nav-logo p {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  /* Navigation menu styling */
+  .nav-menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  /* Hide menu on small screens */
+  .nav-menu li {
+    padding: 10px;
+  }
+  
+  .nav-menu li:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1em;
+  }
+  
+  /* Navbar dropdown toggle button */
+  .nav-dropdown {
+    cursor: pointer;
+  }
+  
+  /* Cart and login section */
+  .nav-login-cart {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .nav-cart-count {
+    background-color: red;
+    color: white;
+    font-size: 0.9em;
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  /* Hamburger menu for small screens */
+  .menu-btn {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .menu-bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  footer p {
+    margin-top: 20px;
+    color: #777;
+  }
+  
+  /* Responsive styling for mobile screens */
+  @media (max-width: 768px) {
+    /* Hide the menu by default */
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    /* Show the hamburger menu button on small screens */
+    .menu-btn {
+      display: flex;
+    }
+  
+    /* Toggle menu when open */
+    .menu-active {
+      display: flex;
+    }
+  
+    /* Adjust the footer for smaller screens */
+    footer ul {
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive styling for very small screens (mobile view) */
+  @media (max-width: 480px) {
+    .nav-logo p {
+      font-size: 1.2em;
+    }
+  
+    .nav-login-cart {
+      gap: 5px;
+    }
+  
+    .nav-cart-count {
+      font-size: 0.8em;
+      padding: 3px;
+    }
+  }
+  
