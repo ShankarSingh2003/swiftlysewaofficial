@@ -79,9 +79,9 @@ const Dashboard = ({ allservices }) => {
   };
 
   // Ensure allservices is an array and handle it accordingly
-  const top10Services = (Array.isArray(allservices) ? allservices : [])
-    .sort((a, b) => a.distance - b.distance)
-    .slice(0, 3);
+  const top10Services = (Array.isArray(allservices) ? [...allservices] : [])
+  .sort((a, b) => a.distance - b.distance)
+  .slice(0, 3);
 
   // Handle form submission to create a new service
   const navigate = useNavigate();

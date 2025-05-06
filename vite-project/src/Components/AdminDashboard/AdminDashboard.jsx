@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "./AdminDashboard.css";
 import CreateProductpage from "../CreateProductpage/CreateProductpage";
-import { useDispatch, useSelector } from "react-redux";
-import { getAllProducts } from "../../action/Product";
+import {  useSelector } from "react-redux";
+// import { getAllProducts } from "../../action/Product";
 import Loader from "../Loader/Loader";
 
 const AdminDashboard = ({ users, user }) => {
   const { products, loading } = useSelector((state) => state.AllProducts);
   console.log(products);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getAllProducts());
-  }, []);
+  // const dispatch = useDispatch();
+  // useEffect(() => {
+  //   dispatch(getAllProducts());
+  // }, []);
   const [activeTab, setActiveTab] = useState("users"); // Default to 'users'
 
   return loading ?<Loader/>: (

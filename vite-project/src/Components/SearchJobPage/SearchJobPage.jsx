@@ -79,7 +79,7 @@ const SearchJobPage = () => {
             </button>
           </div>
 {location.lat}
-          <LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY} libraries={libraries}>
+          <LoadScript googleMapsApiKey={import.meta.REACT_APP_GOOGLE_MAPS_API_KEY} libraries={libraries}>
             <GoogleMap
               mapContainerStyle={{ height: "400px", width: "100%" }}
               center={location}
