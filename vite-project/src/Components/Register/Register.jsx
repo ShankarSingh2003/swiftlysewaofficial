@@ -8,6 +8,7 @@ import { validationSchema } from "../../ValidatorSchema/ValidatorSchema";
 import { registerUser } from "../../action/User";
 import "./Register.css";
 import { toast } from "react-toastify";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const dispatch = useDispatch();
@@ -24,6 +25,7 @@ const Register = () => {
     resolver: zodResolver(validationSchema),
   });
 
+
   // Form submission handler
   const submitHandler = (data) => {
   
@@ -38,6 +40,9 @@ const Register = () => {
     toast.error(`${error}`)
       dispatch({ type: "clearErrors" });
     }
+
+   
+
   }, [dispatch, error]);
 
   return (
